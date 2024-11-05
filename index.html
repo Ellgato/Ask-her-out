@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Date</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing">
+        <h1>Hey, Srushti</h1>
+        <p>Welcome to a little surprise I made just for you!</p>
+        <button onclick="showMemories()">Start the Journey</button>
+    </section>
+
+    <!-- Memories Section -->
+    <section id="memories" style="display:none;">
+        <h2>Our Memories</h2>
+        <div class="gallery">
+            <img src="photo_2024-11-05_13-10-11.jpg" alt="Memory 1">
+            <img src ="photo_2024-11-05_13-09-55.jpg" alt="Memory 2">
+            <img src= "photo_2024-11-05_13-10-02.jpg" alt="Memory 3">
+            <!-- Add more images as needed -->
+        </div>
+        <button onclick="showFinalPage()">Keep Going</button>
+    </section>
+
+    <!-- The Big Ask Section -->
+    <section id="final" style="display:none;">
+        <h2>Will You Go Out With Me?</h2>
+        <p>You mean the world to me, and I'd love to make more memories together. So, how about a date?</p>
+        <button onclick="showResponse()">Yes!</button>
+    </section>
+
+    <!-- Response Message -->
+    <section id="response" style="display:none;">
+        <h2>Yay! Can't wait!</h2>
+        <p>I'm so excited for us to spend more time together. ❤️</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

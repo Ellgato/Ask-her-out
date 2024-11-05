@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box; /* Ensure padding does not affect width/height */
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, #ff6f61, #de1c72); /* Romantic gradient */
+    color: #fff; /* Change text color to white for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+#landing, #memories, #final, #response {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 40px 20px; /* More padding for a comfortable layout */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px; /* Limit max width for better readability */
+    width: 90%; /* Responsive width */
+}
+
+h1, h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Button background */
+    color: #de1c72; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    margin-top: 20px; /* Spacing between elements */
+}
+
+button:hover {
+    background-color: #ff6f61; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Wrap images in the gallery */
+    justify-content: center; /* Center images */
+}
+
+.gallery img {
+    width: 100px; /* Fixed size for images */
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller font size on smaller screens */
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em; /* Smaller font size */
+    }
+
+    button {
+        font-size: 1em; /* Smaller button text */
+        padding: 10px; /* Smaller padding */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5em; /* Further reduce font size */
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+
+    button {
+        padding: 8px; /* Further reduce padding */
+    }
+}
+
